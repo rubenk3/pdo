@@ -27,10 +27,10 @@ $friends = $statement->fetchAll(PDO::FETCH_ASSOC);
 </ul>
 
 <form method="post" action="traitement.php">
-    <label for="firstname">Gimme ya firstname</label>
+    <label for="firstname">Entrez votre prénom</label>
     <input type="text" id="firstname" name="firstname" max="45" required>
 
-    <label for="lastname">Gimme ya lastname</label>
+    <label for="lastname">Entrez votre nom</label>
     <input type="text" id="lastname" name="lastname" max="45" required>
 
     <input type="submit" value="Send">
