@@ -1,0 +1,65 @@
+:root {
+    --primary: orange;
+    --intermediate: grey;
+    --light: white;
+    --error: rgb(247, 223, 223);
+    --spacing: 0.5rem;
+    --spacing2: 1rem;
+
+}
+
+main {
+    width: 75%;
+    margin: auto;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-block-start: var(--spacing2);
+}
+
+input {
+    padding: var(--spacing);
+    border-radius: 4px;
+    border: 1px solid var(--intermediate);
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: var(--spacing);
+    border:0;
+    border-radius: 4px;
+    width: max-content;
+    margin-block-start: var(--spacing2);
+    font-size: 1.3rem;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+button:active {
+    filter: brightness(90%);
+}
+
+.error  {
+    background-color: var(--error);
+    padding: var(--spacing2);
+    border-radius: 4px;
+    list-style-position: inside;
+}
+
+article {
+    border: 1px solid var(--primary);
+    padding: var(--spacing);
+}
+
+.stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing);
+}

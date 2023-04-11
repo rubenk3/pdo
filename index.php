@@ -1,6 +1,9 @@
 <?php
-require_once 'connec.php';
+
+require __DIR__. '/connec.php';
 $pdo = new \PDO(DSN, USER, PASS);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -13,8 +16,8 @@ $pdo = new \PDO(DSN, USER, PASS);
 </head>
 
 <body>
-
 <?php
+
 $query = "SELECT * FROM friend";
 $statement = $pdo->query($query);
 $friends = $statement->fetchAll(PDO::FETCH_ASSOC);
